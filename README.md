@@ -7,7 +7,7 @@ Inspired by the open-rmf adapter templates on open-rmf, this package aims to pro
 Fill up the section of the codes which make the respective API calls to the RTLS system/device. These section will be indicated as `IMPLEMENT YOUR CODE HERE`.
 
 Most of the additional inputs will be found in the `RTLSClientAPI.py` file which defines some of the core functionality the RTLS requires and the communication menas with the devices involved. For example, if your device connects and provides location information via Serial, then the `rtlsAPI::get_position()` function may be implemented as below
-```
+```python
 def get_pos(self):
     try:
         data = self.ser.read(9999)
